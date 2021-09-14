@@ -690,10 +690,11 @@ Building process have two steps:
 Project uses dosbox as emulation layer for running dos programs. You should build it before building javascript API. To do this you should have emscripten installed in your system and CMake. Build process should be easy if you familar with cmake, just run this commands:
 
 ```
+//some reminders to myself
 make sure /usr/bin/python maps to /usr/bin/python3
 make sure cmake is installed: sudo apt install cmake
 create build directory in js-dos root, not in emsdk
-
+```
 
 
 ```
