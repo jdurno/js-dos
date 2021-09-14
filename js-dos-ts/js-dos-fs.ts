@@ -166,7 +166,17 @@ export class DosFS {
             });
         });
     }
+    // read status file
+    // hacked in by John Durno for NAPLPS emulator, 2021-09-14
+    // allows external js to consult a status file within the application
+    public readStatusFile() {
+	try{const vtstatus: string = this.fs.readFile("/VTSTATUS.TXT", {encoding: 'utf8'});
+	    return vtstatus} catch {
+		return "VTSTATUSFAIL"}
+    }
 
+    
+    
     // ### createFile
     public createFile(file: string, body: ArrayBuffer | Uint8Array | string) {
         // [synchronous] allow to create file in FS, you can pass absolute path.
