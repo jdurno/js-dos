@@ -1,3 +1,9 @@
+Hacked Fork of 6.22
+===========
+
+This repo contains a fork of JS-DOS 6.22 with a simple function hacked into js-dos-fs.ts that reads the contents of a file called VTSTATUS.TXT. You almost certainly don't want to use this version of JS-DOS. Use caiiiycuk's excellent version instead. 
+
+
 js-dos 7.xx
 ===========
 
